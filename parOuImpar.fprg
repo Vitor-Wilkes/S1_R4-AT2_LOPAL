@@ -4,23 +4,26 @@
         <attribute name="name" value="parOuImpar"/>
         <attribute name="authors" value="I1HSA"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-04-13 08:31:39 "/>
+        <attribute name="saved" value="2026-04-13 09:56:02 "/>
         <attribute name="created" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjA4OjIzOjA3ICI7MjQxNg=="/>
-        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjA4OjMxOjM5ICI7MTsyNTI4"/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjA5OjQ3OjQyICI7MTtJMUhTQTtFQ0ZQNTEyTjEyNjI4NDY7MjAyNi0wNC0xMzsiMDk6MjM6MjEgIjtEZXNjRUNhc2guZnByZzs2Mzcz"/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjA5OjU2OjAyICI7MzsyNTI4"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="number, resul" type="Integer" array="False" size=""/>
-            <output expression="&quot;Informe o n&#250;mero:&quot;" newline="True"/>
-            <input variable="number"/>
-            <assign variable="resul" expression="number % 2"/>
-            <if expression="resul = 0">
+            <declare name="valor, resul, desc" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor da sua compra:&quot;" newline="True"/>
+            <input variable="valor"/>
+            <if expression="valor &gt;= 150">
                 <then>
-                    <output expression="&quot;Seu n&#250;mero &#233; par.&quot;" newline="True"/>
+                    <assign variable="resul" expression="valor - (valor * 0.02)"/>
+                    <assign variable="desc" expression="valor * 0.02"/>
+                    <output expression="&quot;O seu desconto foi de &quot; &amp; desc &amp; &quot; reais, sendo o valor total &quot; &amp; resul &amp; &quot; reais.&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Seu n&#250;mero &#233; &#237;mpar.&quot;" newline="True"/>
+                    <assign variable="desc" expression="valor * 0.02"/>
+                    <output expression="&quot;O seu cashback foi de &quot; &amp; desc &amp; &quot; reais, sendo o valor total &quot; &amp; valor &amp; &quot; reais.&quot;" newline="True"/>
                 </else>
             </if>
         </body>

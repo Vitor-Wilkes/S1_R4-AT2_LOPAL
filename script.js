@@ -1,15 +1,18 @@
-let number = Number(prompt("Insira seu número:"));
+let number = Number(prompt("Insira o valor da compra:"));
 
-let resul = number % 2
+let resul;
 
-if (isNaN(resul)) {
+let desc = number * 0.02
+
+if (isNaN(number)) {
     alert("Você não digitou um número.")
 }
 else {
-    if (resul == 0) {
-        alert("Seu número é par.")
+    if (number >= 150) {
+        resul = number - desc;
+        alert(`O valor do desconto é de ${desc} reais, portanto o valor final é de ${resul} reais.`)
     }
     else {
-        alert("Seu número é ímpar.")
+        alert(`O valor do cashback é de ${desc} reais, portanto o valor total é de ${number} reais`)
     }
 }
