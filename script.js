@@ -7,9 +7,9 @@ if (isNaN(resul)) {
 }
 else {
     if (resul == 0) {
-        alert("Seu número é par.")
+        alert("Seu número é par")
     }
     else {
-        alert("Seu número é ímpar.")
+        alert("Seu número é ímpar")
     }
 }
