@@ -1,15 +1,13 @@
-let number = Number(prompt("Insira seu número:"));
+let number = Number(prompt("Insira sua altura:"));
 
-let resul = number % 2
-
-if (isNaN(resul)) {
+if (isNaN(number)) {
     alert("Você não digitou um número.")
 }
 else {
-    if (resul == 0) {
-        alert("Seu número é par.")
+    if (number >= 1.5) {
+        alert("Pode entrar no brinquedo.")
     }
     else {
-        alert("Seu número é ímpar.")
+        alert("Acesso negado.")
     }
 }
