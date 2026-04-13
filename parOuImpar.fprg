@@ -4,23 +4,24 @@
         <attribute name="name" value="parOuImpar"/>
         <attribute name="authors" value="I1HSA"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-04-13 10:39:27 "/>
+        <attribute name="saved" value="2026-04-13 10:46:09 "/>
         <attribute name="created" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjA4OjIzOjA3ICI7MjQxNg=="/>
         <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjA5OjQ3OjQyICI7MTtJMUhTQTtFQ0ZQNTEyTjEyNjI4NDY7MjAyNi0wNC0xMzsiMDk6MjM6MjEgIjtEZXNjRUNhc2guZnByZzs2Mzcz"/>
-        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjEwOjM5OjI3ICI7NDsyNTI5"/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjEwOjQ2OjA5ICI7NTsyNTI4"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="valor, resul, desc" type="Real" array="False" size=""/>
-            <output expression="&quot;Digite a sua altura(em metros):&quot;" newline="True"/>
-            <input variable="valor"/>
-            <if expression="valor &gt;= 1.4">
+            <declare name="senha, senha2" type="String" array="False" size=""/>
+            <output expression="&quot;Digite a senha:&quot;" newline="True"/>
+            <input variable="senha"/>
+            <output expression="&quot;Digite novamente a senha:&quot;" newline="True"/>
+            <if expression="senha == senha2">
                 <then>
-                    <output expression="&quot;Pode entrar no brinquedo.&quot;" newline="True"/>
+                    <output expression="&quot;Acesso permitido&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Altura insuficiente.&quot;" newline="True"/>
+                    <output expression="&quot;Acesso negado.&quot;" newline="True"/>
                 </else>
             </if>
         </body>

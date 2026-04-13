@@ -1,13 +1,9 @@
-let number = Number(prompt("Insira sua altura:"));
+let senha = prompt("Insira a senha");
+let senha2 = prompt("Insira novamente a senha:");
 
-if (isNaN(number)) {
-    alert("Você não digitou um número.")
+if(senha == senha2) {
+    alert("Acesso permitido.")
 }
 else {
-    if (number >= 1.5) {
-        alert("Pode entrar no brinquedo.")
-    }
-    else {
-        alert("Acesso negado.")
-    }
+    alert("Acesso negado.")
 }
