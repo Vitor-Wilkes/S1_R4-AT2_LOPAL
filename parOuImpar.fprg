@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="parOuImpar"/>
+        <attribute name="authors" value="I1HSA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 08:31:39 "/>
+        <attribute name="created" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjA4OjIzOjA3ICI7MjQxNg=="/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODQ2OzIwMjYtMDQtMTM7IjA4OjMxOjM5ICI7MTsyNTI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number, resul" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o n&#250;mero:&quot;" newline="True"/>
+            <input variable="number"/>
+            <assign variable="resul" expression="number % 2"/>
+            <if expression="resul = 0">
+                <then>
+                    <output expression="&quot;Seu n&#250;mero &#233; par.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu n&#250;mero &#233; &#237;mpar.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
