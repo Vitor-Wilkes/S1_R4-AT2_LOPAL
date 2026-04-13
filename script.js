@@ -10,9 +10,9 @@ if (isNaN(number)) {
 else {
     if (number >= 150) {
         resul = number - desc;
-        alert(`O valor do desconto é de ${desc} reais, portanto o valor final é de ${resul} reais.`)
+        alert(`O valor do desconto é de ${desc.toFixed(2)} reais, portanto o valor final é de ${resul} reais.`)
     }
     else {
-        alert(`O valor do cashback é de ${desc} reais, portanto o valor total é de ${number} reais`)
+        alert(`O valor do cashback é de ${desc.toFixed(2)} reais, portanto o valor total é de ${number} reais`)
     }
 }
